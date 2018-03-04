@@ -1,27 +1,86 @@
 .logo-holder {
     width: 220px;
-    height: 30px;
     padding-top: 45px;
     padding-bottom: 45px;
+    @media (max-width: 940px) {
+        width: 100%;
+        text-align: center;
+        padding-top: 80px;
+    }
 }
+
+.navigation-button {
+    display: none;
+    @media (max-width: 940px) {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: #fff;
+        color: #000;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
 .navigation-holder {
     width: 700px;
     height: 30px;
     padding-top: 45px;
     padding-bottom: 45px;
+    @media (max-width: 940px) {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(124, 197, 118, 0.95);
+        padding-top: 80px;
+    }
+    &--mobile-open {
+        @media (max-width: 940px) {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(124, 197, 118, 0.95);
+            padding-top: 80px;
+        }
+    }
 }
+
 .navigation-list {
     margin: 0;
     padding: 0;
-    list-style-type: none;
+    list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     text-transform: uppercase;
-    
-    &__list-item{
+    @media (max-width: 940px) {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+    }
+    &__list-item {
         padding-left: 30px;
-        
         a {
             font-family: 'Montserrat', sans-serif;
             color: #777;
@@ -30,16 +89,24 @@
             transition: 0.2s ease-out;
             padding-bottom: 7px;
             border-bottom: 0px solid #7cc576;
-            
-            
-            &:hover, &:focus {
+            @media (max-width: 940px) {
+                color: #fff;
+                font-size: 22px;
+                &:hover,
+                &:focus,
+                &:active {
+                    color: #fff !important;
+                    border-bottom: 1px solid #fff !important;
+                }
+            }
+            &:hover,
+            &:focus {
                 color: #2ab41f;
                 border-bottom: 1px solid #7cc576;
                 text-decoration: none;
                 padding-bottom: 3px;
                 outline: none;
             }
-            
             &:active {
                 color: #f86900;
                 border-bottom: 1px solid #f86900;

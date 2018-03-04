@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Roboto+Slab:300,400,700');
-
 * {
     box-sizing: border-box;
 }
-html, body {
+
+html,
+body {
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto Slab', serif;
+    font-size: 16px;
 }
+
 .btn {
     height: 60px;
     background-color: #7cc576;
@@ -22,7 +27,7 @@ html, body {
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    text-shadow: 0px 1px 1px rgba(34,129,26, 1);
+    text-shadow: 0px 1px 1px rgba(34, 129, 26, 1);
 }
 
 .heading-block {
@@ -35,11 +40,14 @@ html, body {
     font-weight: 700;
     color: #fff;
     font-size: 60px;
-    line-height: 65px;
+    line-height: 1.1;
     text-transform: uppercase;
     letter-spacing: -1px;
     margin: 0;
     margin-bottom: 30px;
+    @media (max-width: 940px) {
+        font-size: 40px;
+    }
 }
 
 .heading-2 {
@@ -52,6 +60,9 @@ html, body {
     letter-spacing: -1px;
     margin: 0;
     margin-bottom: 5px;
+    @media (max-width: 940px) {
+        font-size: 30px;
+    }
 }
 
 .heading-2.white {
@@ -68,6 +79,9 @@ html, body {
     font-size: 20px;
     color: #777;
     margin-top: 0;
+    @media (max-width: 940px) {
+        font-size: 18px;
+    }
 }
 
 .subtitle.subtitle--header {

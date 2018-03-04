@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Treehouse</title>
     <link rel="stylesheet" href="less/main.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -17,7 +18,7 @@
                     <img src="img/logo.png" alt="logo">
                 </a>
             </div>
-            <div class="navigation-holder">
+            <div class="navigation-holder" id="navigation">
                 <ul class="navigation-list">
                     <li class="navigation-list__list-item"><a href="#">Home</a></li>
                     <li class="navigation-list__list-item"><a href="#">About</a></li>
@@ -25,6 +26,9 @@
                     <li class="navigation-list__list-item"><a href="#">Portfolio</a></li>
                     <li class="navigation-list__list-item"><a href="#">Contact</a></li>
                 </ul>
+            </div>
+            <div class="navigation-button" id="nav-toggle">
+                SHOW NAVIGATION
             </div>
         </div>
     </div>
@@ -80,7 +84,7 @@
             </div>
         </div>
     </div>
-    
+
     <!--just relax-->
     <div class="special-bg-block">
         <div class="background-icon"></div>
@@ -99,6 +103,9 @@
             </div>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
